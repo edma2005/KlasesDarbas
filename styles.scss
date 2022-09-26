@@ -266,6 +266,10 @@ footer {
        .main {
         display: flex;
         flex-direction: column;
+        .item2 {
+            min-width: 40vw;
+            min-height: 40vh;
+        }
        }
        .main3 > .name3 {
         margin-left: auto;
