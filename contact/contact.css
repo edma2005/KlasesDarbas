@@ -136,6 +136,11 @@ body .formcontainer .block .field3 button {
   width: 500px;
   height: 50px;
   margin-top: -10px;
+  transition: 0.5s ease-in-out;
+}
+body .formcontainer .block .field3 button:hover {
+  background-color: white;
+  color: black;
 }
 
 footer {
