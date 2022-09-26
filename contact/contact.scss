@@ -124,6 +124,13 @@ body {
                     width: 500px;
                     height: 50px;
                 }
+                button {
+                    background-color: black;
+                    color: white;
+                    width: 500px;
+                    height: 50px;
+                    margin-top: -10px;
+                }
             }
         }
     }
@@ -181,6 +188,9 @@ footer {
             display: flex;
             flex-direction: column;
             .field3 > input {
+                width: 250px;
+            }
+            .field3 > div > button {
                 width: 250px;
             }
         }
