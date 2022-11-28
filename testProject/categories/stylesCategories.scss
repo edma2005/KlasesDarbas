@@ -5,14 +5,13 @@ body {
   header {
     #mobileNav {
       display: none;
-      color: #F76C5E;
+      color: red;
       padding: 1px 6px;
-      border: 3px solid #F76C5E;
-      border-radius: 20%;
+      border: 3px solid red;
       position: fixed;
       z-index: 99;
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
       font-size: 2rem;
 
       @media screen and (max-width: 815px) {
@@ -21,39 +20,34 @@ body {
     }
 
     #mobileList {
-      background-color: #324376;
+      background-color: yellow;
       display: inline-block;
       list-style: none;
       z-index: 99;
       position: fixed;
       top: -500px;
-      right: -180px;
+      right: -300px;
       padding: 10px 0;
-      border-bottom-left-radius: 40px;
       transition: all 0.5s ease;
 
       .place {
         font-size: 1.5rem;
         padding: 15px 30px;
-        border-bottom: 2px solid #324376;
+        border-bottom: 2px solid red;
         transition: all 0.5s ease;
 
         &:hover {
-          border-bottom: 2px solid #F68E5F;
-          background-color: #586BA4;
+          background-color: blue;
           cursor: pointer;
-          color: #F5DD90;
+          color: red;
         }
       }
 
       .place:last-of-type {
-        border-bottom-left-radius: 40px;
         &:hover {
-          border-bottom-left-radius: 40px;
-          border-bottom: 2px solid #F68E5F;
-          background-color: #586BA4;
+          background-color: blue;
           cursor: pointer;
-          color: #F5DD90;
+          color: red;
         }
       }
 
@@ -64,13 +58,14 @@ body {
         margin: 0 auto;
       }
     }
+    
     nav {
       position: fixed;
       top: 0;
       width: 100vw;
       display: flex;
-      justify-content: space-between;
-      background-color: #324376;
+      justify-content: space-around;
+      background-color: gold;
       z-index: 99;
   
       @media screen and (max-width: 815px) {
@@ -79,42 +74,37 @@ body {
   
       a {
         text-decoration: none;
-        color: black;
+        color: red;
       }
   
-      .logo {
-        padding: 20px;
-        font-size: 1.6rem;
-  
-        span{
-          font-size: 0.7rem;
-        }
+      .logo img {
+        width: 300px;
+        height: 60px;  
       }
-  
+        
       .navbar {
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         list-style: none;
   
         .place {
           margin-right: 10px;
           padding: 35px 20px;
           transition: all 0.5s ease;
-          border-bottom: 2px solid #324376;
   
           &:hover {
-            background-color: #586BA4;
+            background-color: red;
             cursor: pointer;
-            color: #F5DD90;
-            border-bottom: 2px solid #F68E5F;
+            color: blue;
           }
         }
       }
       .cart {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-right: 10px;
+        position: relative;
   
         .forCart{
           padding: 30px 20px;
@@ -122,24 +112,22 @@ body {
           transition: all 0.5s ease;
   
           &:hover {
-            background-color: #586BA4;
+            background-color: red;
             cursor: pointer;
-            color: #F76C5E;
+            color: blue;
           }
         }
   
         #cartsDp {
           display: none;
           position: absolute;
-          border: 2px solid #F68E5F;
-          top: 60px;
-          right: 45px;
-          width: 260px;
-          padding: 10px 10px 30px 10px;
-          border-radius: 50px;
-          background-color: rgba(245,221,144, 0.5);
-          border-top-right-radius: 0;
-          transition: all 1s ease;
+          color: white;
+          background-color: black;
+          top: 400px;
+          width: 400px;
+          height: 400px;
+          padding: 10px;
+          transition: all 1s ease-in-out;
   
           #cartDropdownItem {
             padding: 0;
@@ -148,10 +136,10 @@ body {
               display: flex;
               align-items: center;
               margin-bottom: 10px;
-              border-bottom: 1px solid #F68E5F;
+              border-bottom: 1px solid red;
     
               img {
-                width: 80px;
+                width: 100px;
                 border-radius: 50px;
                 margin-bottom: 5px;
               }
@@ -172,7 +160,6 @@ body {
           position: absolute;
           font-size: 1.2rem;
           font-weight: bold;
-          right: 100px;
           bottom: 15px;
           }
         }
@@ -184,9 +171,10 @@ body {
 
     form {
       display: flex;
+      flex-direction: column;
       position: fixed;
       z-index: 98;
-      top: 100px;
+      bottom: 100px;
 
       @media screen and (max-width: 815px) {
         top: 20px;
@@ -195,13 +183,14 @@ body {
 
       .filterItem {
         margin: 10px 30px;
+        color: red;
 
         input {
           width: 100px;
           border: none;
           background-color: white;
           opacity: 60%;
-          border-bottom: 2px solid #F68E5F;
+          border-bottom: 2px solid red;
          
 
           &:focus{
@@ -210,10 +199,9 @@ body {
         }
 
         select {
-          opacity: 60%;
-          color: #F68E5F;
+          color: blue;
           border: none;
-          border-bottom: 2px solid #F68E5F;
+          border-bottom: 2px solid blue;
           &:focus{
             outline: none;
           }
@@ -222,7 +210,7 @@ body {
     }
 
     #products {
-      margin: 100px auto;
+      margin: 200px auto;
       display: grid;
       width: 90vw;
       grid-template-columns:1fr 1fr 1fr 1fr;
@@ -230,25 +218,19 @@ body {
 
       @media screen and (max-width: 1200px) {
        grid-template-columns: 1fr 1fr 1fr;
-       margin: 100px auto;
+       margin: 200px auto;
        width: 100vw;
 
        @media screen and (max-width: 815px) {
         grid-template-columns: 1fr 1fr;
         margin-top: 70px;
         gap: 10px;
+        margin: 200px auto;
         }
       }
-
-      .noliked {
-        font-size: 5rem;
-        color: #F68E5F;
-        margin-top: 25vh;
-        margin-left: 40vw;
-      }
-
+      
       .product {
-        padding: 0;
+        z-index: 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -258,39 +240,45 @@ body {
         transition: all 0.5s ease;
         margin: 0 auto;
 
-        @media screen and (max-width: 1024px) {
-         width: 250px;
+        @media screen and (max-width: 1500px) {
+          width: 280px;
+        
+          @media screen and (max-width: 1024px) {
+            width: 250px;
+  
+            @media screen and (max-width: 815px) {
+              width: 200px;
 
-         @media screen and (max-width: 769px) {
-          width: 180px;
+              @media screen and (max-width: 620px) {
+                width: 180px;
+               }
+            }
           }
-        }
+        }   
 
         &:hover {
           cursor: pointer;
-          border-bottom: 2px solid #F68E5F;
-          color: #F68E5F;
-          border-radius: 100px;
+          color: red;
         }
 
-        .fa-heart {
+        .fa-heart-circle-plus {
           position: absolute;
-          top: 50px;
-          right: 50px;
+          bottom: 0px;
+          left: 0px;
           font-size: 2rem;
           transition: all 0.5s ease;
 
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 815px) {
             right: 10px;
             top: 10px;
           }
 
           &:hover {
             cursor: pointer;
-            color: #F5DD90;
+            color: blue;
           }
         }
-
+        
         .liked {
           color: red;
         }
@@ -299,14 +287,26 @@ body {
           object-fit: scale-down;
           height: 300px;
 
-          @media screen and (max-width: 769px) {
-            height: 200px;
-          }
+          @media screen and (max-width: 1500px) {
+            height: 280px;
+          
+            @media screen and (max-width: 1024px) {
+              height: 250px;
+    
+              @media screen and (max-width: 815px) {
+                height: 200px;
+
+                @media screen and (max-width: 620px) {
+                  height: 180px;
+                 }
+              }
+            }
+          }  
+          
         }
 
         .productPrice {
           margin: 0;
-          
         }
       }
     }
@@ -315,8 +315,10 @@ body {
   footer{
     position: fixed;
     bottom: 0;
-    background-color: #324376;  
+    background-color: gold;  
     width: 100%;
+    height: 10%;
+    z-index: 3;
 
     p {
       font-size: 0.7rem;
@@ -334,6 +336,31 @@ body {
         i {
           font-size: 1.5rem;
           margin-left: 5px;
+        }
+      }
+    }
+
+    #admin {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: blue;
+      padding: 5px;
+      transition: all 0.5s ease;
+
+      @media screen and (max-width: 769px) {
+        display: none;
+      }
+
+      i {
+        color: black;
+      }
+
+      &:hover {
+        color: red;
+        cursor: pointer;
+        i{
+          color: blue;
         }
       }
     }

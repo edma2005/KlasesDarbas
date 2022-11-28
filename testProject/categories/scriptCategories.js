@@ -119,7 +119,7 @@ const filteredCategorie = (data) => {
       })
     })
     if (likeArr.length<1) {
-      console.log('no like items')
+      console.log('no liked items')
       noLiked()
     } 
     
@@ -145,7 +145,9 @@ const filteredCategorie = (data) => {
 const noLiked = () => {
   const h1 = document.createElement('h1');
   h1.setAttribute('class', 'noliked');
-  h1.textContent='No Liked Items ;(';
+  h1.textContent='Sorry,there is no LIKED items in the cart';
+  h1.style.margin="100px";
+  h1.style.textAlign="center";
   products.appendChild(h1);
 }
 
@@ -171,9 +173,9 @@ const draw = (data) => {
     div.setAttribute('class', 'product');
 
     const likedBtn = document.createElement('i');
-    likedBtn.setAttribute('class', 'fa-regular fa-heart');
+    likedBtn.setAttribute('class', 'fa-solid fa-heart-circle-plus');
     if (likedArr.includes(element.id)) {
-      likedBtn.setAttribute('class', 'liked fa-solid fa-heart');
+      likedBtn.setAttribute('class', 'liked fa-solid fa-heart-circle-plus');
     }
 
     if (likedArr.length>0) {
