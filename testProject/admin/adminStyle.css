@@ -249,8 +249,8 @@
 * body #forAdmin #products .drawnProduct {
   background-color: lightcyan;
   width: 300px;
-  padding: 10px;
-  padding-top: 30px;
+  padding: 20px;
+  padding-top: 40px;
   position: relative;
 }
 * body #forAdmin #products .drawnProduct input {
@@ -264,13 +264,13 @@
   width: fit-content;
 }
 * body #forAdmin #products .drawnProduct div img {
-  width: 200px;
+  width: 180px;
   margin: 10px;
 }
 * body #forAdmin #products .drawnProduct div .picDelete {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   color: white;
   background-color: red;
   border-radius: 10px;
@@ -301,7 +301,7 @@
   padding: 0px 10px;
   border-radius: 5px;
   position: absolute;
-  top: 41px;
+  top: 51px;
   right: 20px;
   transition: all 0.5s ease;
 }

@@ -161,7 +161,7 @@ logout.addEventListener('click', () => {
 
 showAddBtn.addEventListener('click', () => {
 	addProducts.style.display= 'block';
-	showAddBtn.style.display= 'none';
+	showAddBtn.style.display= 'inline-block';
 })
 
 closeAdd.addEventListener('click', () => {
@@ -344,15 +344,15 @@ const draw = (data) => {
 
 		const edit = document.createElement('button');
 		edit.setAttribute('class', 'editBtn');
-		edit.textContent= 'Update info';
+		edit.textContent= 'Update entries';
 
 		const addPic = document.createElement('button');
 		addPic.setAttribute('class', 'addPic');
-		addPic.textContent= 'Add pic'
+		addPic.textContent= 'Add'
 
 		const deleteBtn = document.createElement('button');
 		deleteBtn.setAttribute('class', 'deleteBtn');
-		deleteBtn.textContent= 'Delete item';
+		deleteBtn.textContent= 'Delete product';
 
 		div.appendChild(edit);
 		div.appendChild(addPic);

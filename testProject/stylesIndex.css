@@ -190,7 +190,7 @@ body main #products {
   margin: 200px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px;
+  gap: 10px;
 }
 @media screen and (max-width: 1200px) {
   body main #products {
@@ -209,7 +209,7 @@ body main #products {
 @media screen and (max-width: 1200px) and (max-width: 815px) and (max-width: 620px) {
   body main #products {
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    gap: 10px;
   }
 }
 body main #products .product {
@@ -257,7 +257,8 @@ body main #products .product .fa-heart-circle-plus {
 @media screen and (max-width: 815px) {
   body main #products .product .fa-heart-circle-plus {
     top: 0px;
-    left: 50px;
+    left: 73px;
+    margin-left: 70px;
   }
 }
 body main #products .product .fa-heart-circle-plus:hover {

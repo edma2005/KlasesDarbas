@@ -210,20 +210,23 @@ body {
     #products {
       margin: 200px auto;
       display: grid;
-      width: 90vw;
-      grid-template-columns:1fr 1fr 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
 
       @media screen and (max-width: 1200px) {
-       grid-template-columns: 1fr 1fr 1fr;
-       margin: 200px auto;
-       width: 100vw;
-
-       @media screen and (max-width: 815px) {
         grid-template-columns: 1fr 1fr;
-        margin-top: 70px;
-        gap: 10px;
         margin: 200px auto;
+ 
+        @media screen and (max-width: 815px) {
+         grid-template-columns: 1fr 1fr 1fr;
+         width: 100vw;
+         gap: 10px;
+         margin: 200px auto;
+
+         @media screen and (max-width: 620px) {
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+         }
         }
       }
       

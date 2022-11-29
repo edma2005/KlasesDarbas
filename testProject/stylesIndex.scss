@@ -213,7 +213,7 @@ body {
       margin: 200px auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 0px;
+      gap: 10px;
 
       @media screen and (max-width: 1200px) {
         grid-template-columns: 1fr 1fr;
@@ -227,7 +227,7 @@ body {
 
          @media screen and (max-width: 620px) {
           grid-template-columns: 1fr 1fr;
-          gap: 0;
+          gap: 10px;
          }
         }
       }
@@ -273,7 +273,8 @@ body {
 
           @media screen and (max-width: 815px) {
             top: 0px;
-            left: 50px;
+            left: 73px;
+            margin-left: 70px;
           }
 
           &:hover {
@@ -289,7 +290,6 @@ body {
         .productImg {
           object-fit: scale-down;
           height: 300px;
-
           @media screen and (max-width: 1500px) {
             height: 280px;
           

@@ -289,8 +289,8 @@
         .drawnProduct {
           background-color: lightcyan;
           width: 300px;
-          padding: 10px;
-          padding-top: 30px;
+          padding: 20px;
+          padding-top: 40px;
           position: relative;
 
           input {
@@ -302,14 +302,14 @@
             position: relative;
             width: fit-content;
             img {
-              width: 200px;
+              width: 180px;
               margin: 10px;
             }
   
             .picDelete {
                position: absolute;
-              top: 20px;
-              right: 20px;
+              top: 15px;
+              right: 15px;
               color: white;
               background-color: red;
               border-radius: 10px;
@@ -345,7 +345,7 @@
             padding: 0px 10px;
             border-radius: 5px;
             position: absolute;
-            top: 41px;
+            top: 51px;
             right: 20px;
             transition: all 0.5s ease;
 
