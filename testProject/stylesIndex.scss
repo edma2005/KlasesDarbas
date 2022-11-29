@@ -19,7 +19,7 @@ body {
     }
 
     #mobileList {
-      background-color: yellow;
+      background-color: white;
       display: inline-block;
       list-style: none;
       z-index: 99;
@@ -32,7 +32,6 @@ body {
       .place {
         font-size: 1.5rem;
         padding: 15px 30px;
-        border-bottom: 2px solid red;
         transition: all 0.5s ease;
 
         &:hover {
@@ -64,7 +63,6 @@ body {
       width: 100vw;
       display: flex;
       justify-content: space-around;
-      background-color: gold;
       z-index: 99;
   
       @media screen and (max-width: 815px) {
@@ -120,11 +118,12 @@ body {
         #cartsDp {
           display: none;
           position: absolute;
-          color: white;
-          background-color: black;
-          top: 400px;
-          width: 400px;
-          height: 400px;
+          color: red;
+          background-color: yellow;
+          top: 100px;
+          right: 500px;
+          width: max-content;
+          height: max-content;
           padding: 10px;
           transition: all 1s ease-in-out;
   
@@ -159,7 +158,9 @@ body {
           position: absolute;
           font-size: 1.2rem;
           font-weight: bold;
-          bottom: 15px;
+          color: blue;
+          top: 15px;
+          right: 10px;
           }
         }
       }
@@ -271,8 +272,8 @@ body {
           transition: all 0.5s ease;
 
           @media screen and (max-width: 815px) {
-            bottom: 0px;
-            left: 0px;
+            top: 0px;
+            left: 50px;
           }
 
           &:hover {
@@ -317,18 +318,18 @@ body {
   footer{
     position: fixed;
     bottom: 0;
-    background-color: gold;  
+    background-color: black;  
     width: 100%;
-    height: 10%;
+    height: 7%;
     z-index: 3;
 
     p {
       font-size: 0.7rem;
       text-align: center;
+      color: white;
 
       a {
         text-decoration: none;
-        color: rgb(29, 29, 29);
         transition: all 0.5s ease;
 
         &:hover {
@@ -346,16 +347,12 @@ body {
       position: absolute;
       bottom: 10px;
       left: 10px;
-      color: blue;
+      color: white;
       padding: 5px;
       transition: all 0.5s ease;
 
       @media screen and (max-width: 769px) {
-        display: none;
-      }
-
-      i {
-        color: black;
+        font-size: 0.4rem;
       }
 
       &:hover {

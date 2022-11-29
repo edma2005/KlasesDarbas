@@ -2,10 +2,10 @@ const filterColor = document.querySelector('#filterColor');
 const filterSearch = document.querySelector('#filterSearch');
 const products = document.querySelector('#products');
 const mainIndex = document.querySelector('#mainIndex');
-const tshirts = document.querySelector('#tshirts');
-const hoodies = document.querySelector('#hoodies');
-const sweatshirts = document.querySelector('#sweatshirts');
-const hats = document.querySelector('#hats');
+const suit = document.querySelector('#suit');
+const shirt = document.querySelector('#shirt');
+const boot = document.querySelector('#boot');
+const hat = document.querySelector('#hat');
 const title = document.querySelector('title');
 const liked = document.querySelector('#liked');
 const cart = document.querySelector('#cart');
@@ -17,10 +17,10 @@ const mobileList = document.querySelector('#mobileList');
 const closeBtn = document.querySelector('#closeBtn');
 
 const mainIndex1 = document.querySelector('#mainIndex1');
-const tshirts1 = document.querySelector('#tshirts1');
-const hoodies1 = document.querySelector('#hoodies1');
-const sweatshirts1 = document.querySelector('#sweatshirts1');
-const hats1 = document.querySelector('#hats1');
+const suit1 = document.querySelector('#suit1');
+const shirt1 = document.querySelector('#shirt1');
+const boot1 = document.querySelector('#boot1');
+const hat1 = document.querySelector('#hat1');
 const liked1 = document.querySelector('#liked1');
 const cart1 = document.querySelector('#cart1');
 
@@ -30,25 +30,25 @@ mainIndex1.addEventListener('click', (e) => {
   window.location.href = 'index.html';
 })
 
-tshirts1.addEventListener('click', (e) => {
+suit1.addEventListener('click', (e) => {
   e.preventDefault()
-  localStorage.setItem('categorie', 'tshirt');
+  localStorage.setItem('categorie', 'suit');
   window.location.href = 'categories.html';
 })
 
-hoodies1.addEventListener('click', (e) => {
+shirt1.addEventListener('click', (e) => {
   e.preventDefault()
-  localStorage.setItem('categorie', 'hoodie');
+  localStorage.setItem('categorie', 'shirt');
   window.location.href = 'categories.html';
 })
 
-sweatshirts1.addEventListener('click', (e) => {
+boot1.addEventListener('click', (e) => {
   e.preventDefault()
-  localStorage.setItem('categorie', 'sweatshirt');
+  localStorage.setItem('categorie', 'boot');
   window.location.href = 'categories.html';
 })
 
-hats1.addEventListener('click', (e) => {
+hat1.addEventListener('click', (e) => {
   e.preventDefault()
   localStorage.setItem('categorie', 'hat');
   window.location.href = 'categories.html';
@@ -278,25 +278,25 @@ mainIndex.addEventListener('click', (e) => {
   window.location.href = 'index.html';
 })
 
-tshirts.addEventListener('click', (e) => {
+suit.addEventListener('click', (e) => {
   e.preventDefault()
-  localStorage.setItem('categorie', 'tshirt');
+  localStorage.setItem('categorie', 'suit');
   window.location.href = 'categories.html';
 })
 
-hoodies.addEventListener('click', (e) => {
+shirt.addEventListener('click', (e) => {
   e.preventDefault()
-  localStorage.setItem('categorie', 'hoodie');
+  localStorage.setItem('categorie', 'shirt');
   window.location.href = 'categories.html';
 })
 
-sweatshirts.addEventListener('click', (e) => {
+boot.addEventListener('click', (e) => {
   e.preventDefault()
-  localStorage.setItem('categorie', 'sweatshirt');
+  localStorage.setItem('categorie', 'boot');
   window.location.href = 'categories.html';
 })
 
-hats.addEventListener('click', (e) => {
+hat.addEventListener('click', (e) => {
   e.preventDefault()
   localStorage.setItem('categorie', 'hat');
   window.location.href = 'categories.html';

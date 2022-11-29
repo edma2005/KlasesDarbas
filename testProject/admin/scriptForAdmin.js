@@ -323,23 +323,23 @@ const draw = (data) => {
 		inputPic.setAttribute('placeholder', 'enter Url');
 
 		const inputType = document.createElement('input');
-		inputType.setAttribute('class', 'drawType')
+		inputType.setAttribute('placeholder', 'enter Type')
 		inputType.value= element.type;
 
 		const inputColor = document.createElement('input');
-		inputColor.setAttribute('class', 'drawnColor');
+		inputColor.setAttribute('placeholder', 'enter Color');
 		inputColor.value= element.color;
 
 		const inputName = document.createElement('input');
-		inputName.setAttribute('class', 'drawnName');
+		inputName.setAttribute('placeholder', 'enter Name');
 		inputName.value= element.name;
 
 		const inputDescription = document.createElement('input');
-		inputDescription.setAttribute('class', 'drawnDescription');
+		inputDescription.setAttribute('placeholder', 'enter Description');
 		inputDescription.value = element.description;
 
 		const inputPrice  = document.createElement('input');
-		inputPrice.setAttribute('class', 'drawnPrice');
+		inputPrice.setAttribute('placeholder', 'enter Price');
 		inputPrice.value = element.price;
 
 		const edit = document.createElement('button');
@@ -369,7 +369,7 @@ const draw = (data) => {
 		parsedSizes.forEach((size, index) => {
 			index= index+1;
 			const inputSize = document.createElement('input');
-			inputSize.setAttribute('class', 'drawnSize');
+			inputSize.setAttribute('placeholder', 'enter Sizes S>M>L>XL');
 			inputSize.setAttribute('id', `size${element.id}${index}`)
 			inputSize.value = size
 			div.appendChild(inputSize)
