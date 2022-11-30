@@ -1,0 +1,331 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+
+  header {
+    #mobileNav {
+      display: none;
+      color: red;
+      padding: 1px 6px;
+      position: fixed;
+      z-index: 99;
+      top: 10px;
+      right: 10px;
+      font-size: 2rem;
+
+      @media screen and (max-width: 815px) {
+       display: block;
+      }
+    }
+
+    #mobileList {
+      background-color: white;
+      display: inline-block;
+      list-style: none;
+      z-index: 99;
+      position: fixed;
+      top: -500px;
+      right: -300px;
+      padding: 10px 0;
+      transition: all 0.5s ease;
+
+      .place {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: blue;
+          cursor: pointer;
+          color: red;
+        }
+      }
+
+      .place:last-of-type {
+        &:hover {
+          background-color: blue;
+          cursor: pointer;
+          color: red;
+        }
+      }
+
+      #closeBtn {
+        padding: 15px;
+        font-size: 2.5rem;
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+    
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      z-index: 99;
+  
+      @media screen and (max-width: 815px) {
+        display: none;
+      }
+  
+      a {
+        text-decoration: none;
+        color: red;
+      }
+  
+      .logo img {
+        width: 300px;
+        height: 60px;  
+      }
+        
+      .navbar {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+  
+        .place {
+          margin-right: 10px;
+          padding: 35px 20px;
+          transition: all 0.5s ease;
+  
+          &:hover {
+            background-color: red;
+            cursor: pointer;
+            color: blue;
+          }
+        }
+      }
+      .cart {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 10px;
+        position: relative;
+  
+        .forCart{
+          padding: 30px 20px;
+          font-size: 1.7rem;
+          transition: all 0.5s ease;
+  
+          &:hover {
+            background-color: red;
+            cursor: pointer;
+            color: blue;
+          }
+        }
+  
+        #cartsDp {
+          display: none;
+          position: absolute;
+          color: red;
+          background-color: yellow;
+          top: 100px;
+          right: 500px;
+          width: max-content;
+          height: max-content;
+          padding: 10px;
+          transition: all 1s ease-in-out;
+  
+          #cartDropdownItem {
+            padding: 0;
+            position: relative;
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              border-bottom: 1px solid red;
+    
+              img {
+                width: 100px;
+                border-radius: 50px;
+                margin-bottom: 5px;
+              }
+    
+              h3 {
+                font-size: 0.7rem;
+                margin: 5px;
+              }
+              
+              span {
+                font-size: 0.7rem;
+                margin-right: 5px;
+              }
+            }
+          }
+  
+          #cartTotal { 
+            position: absolute;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: blue;
+            top: 15px;
+            right: 10px;
+            }
+        }
+      }
+    }
+  }
+  
+  #item {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: 100px auto;
+
+    @media screen and (max-width: 1200px) {
+      width: 100vw;
+      justify-content: space-between;
+      margin: 100px auto;
+
+      @media screen and (max-width: 815px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+    }
+
+
+    #itemImg {
+      display: flex;
+      flex-direction: column;
+      .ItemImg {
+        max-width: 30vw;
+        object-fit: cover;
+  
+        @media screen and (max-width: 815px) {
+          width: 90vw;
+         }
+      }
+
+      
+    }
+
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+      width: 35vw;
+      margin: 70px;
+      text-align: center;
+
+      @media screen and (max-width: 815px) {
+        margin: 0 auto;
+        width: 90vw;
+       }
+
+      #itemName {
+        font-size: 2rem;
+      }
+
+      #itemCategorie {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        color: red;
+        font-weight: 800;
+      }
+
+      #itemColor {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        color: red;
+        font-weight: 800;
+      }
+
+      #itemPrice {
+        font-size: 1.8rem;
+        color: red;
+        font-weight: 800;
+      }
+
+      .sizes {
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        background-color: yellowgreen;
+        
+          .empty {
+            background-color: red;
+          }
+          span{
+            padding: 8px 10px;
+          }
+          
+        .empty {
+          background-color: red;
+        }
+      }
+
+      #OutOfStock {
+        color: red;
+        font-size: 1.3rem;
+      }
+
+      #itemDescription {
+        word-spacing: 0.4rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: blue;
+        font-weight: 800;
+      }
+      
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+
+        #like {
+          font-size: 2.5rem;
+          margin: 50px 0;
+          margin-right: 20px;
+
+          &:hover {
+            color: red;
+          }
+        }
+
+        .liked {
+          color: red;
+        }
+
+        button {
+          padding: 10px 0;
+          margin: 40px 0;
+          width: fit-content;
+          font-size: 1.5rem;
+          border: none;
+          background-color: white;
+          transition: all 0.5s ease;
+
+          &:hover {
+            cursor: pointer;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;  
+    width: 100%;
+    height: 7%;
+    z-index: 3;
+
+    p {
+      font-size: 0.7rem;
+      text-align: center;
+      color: white;
+
+      a {
+        text-decoration: none;
+        transition: all 0.5s ease;
+
+        i {
+          font-size: 1.5rem;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="item/scriptItem.js"></script>
+  <link rel="stylesheet" href="item/stylesItem.css">
+  <title></title>
+  <script src="https://kit.fontawesome.com/b423b1131d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id="mobileNav"><i class="fa-solid fa-bars"></i></div>
+    <ul id="mobileList">
+      <li id="closeBtn"><i class="fa-regular fa-circle-xmark"></i></li>
+      <li id="mainIndex1" class="place">Home Page</li>
+      <li id="suit1" class="place">Suits</li>
+      <li id="shirt1" class="place">Dress Shirts</li>
+      <li id="boot1" class="place">Dress Boots</li>
+      <li id="hat1" class="place">Dress Hats</li>
+      <li id="liked1" class="place">
+        <i class="fa-solid fa-heart forCart"></i>
+      </li>
+      <li id="cart1" class="place">
+        <i class="fa-solid fa-cart-arrow-down forCart"></i>
+      </li>
+    </ul>
+
+    <nav>
+      <div class="logo"><img src="./img/Edmund Clothing Shop.png" alt=""></span></div>
+      <div class="cart">
+        <a href="#" id="liked"><i class="fa-solid fa-heart forCart"></i></a>
+        <a href="#" id="cart"
+          ><i class="fa-solid fa-cart-arrow-down forCart"></i
+        ></a>
+        <div id="cartsDp">
+          <ol id="cartDropdownItem"></ol>
+          <span id="cartTotal"></span>
+        </div>
+      <ul class="navbar">
+        <a href="#" id="mainIndex"><li class="place">Home Page</li></a>
+        <a href="#" id="suit"><li class="place">Suits</li></a>
+        <a href="#" id="shirt"><li class="place">Dress Shirts</li></a>
+        <a href="#" id="boot"><li class="place">Dress Boots</li></a>
+        <a href="#" id="hat"><li class="place">Dress Hats</li></a>
+      </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="item">
+    <div id="itemImg"></div>
+    <div class="itemInfo">
+      <h3 id="itemName"></h3>
+      <p class="itemSpecs">Category : <span id="itemCategorie"></span></p>
+      <p class="itemSpecs">Color : <span id="itemColor"></span></p>
+
+      <div class="sizes">
+        <span id="s">S</span>
+        <span id="m">M</span>
+        <span id="l">L</span>
+        <span id="xl">XL</span>
+      </div>
+      <p id="OutOfStock"></p>
+      <p id="itemDescription"></p>
+      <form id="sizeForm">
+        <label for="sizes">Pick size :</label>
+        <select name="sizes" id="sizeDropDown">
+          <option value="undefined">-</option>
+          <option id="option1" value="0">S</option>
+          <option id="option2" value="1">M</option>
+          <option id="option3" value="2">L</option>
+          <option id="option4" value="3">XL</option>
+        </select>
+       </form>
+      <p class="itemSpecs">Price : <span id="itemPrice"></span></p>
+      
+      <div class="buttons">
+       <i id="like" class="fa-regular fa-heart"></i>
+       <button id="toCart"><i class="fa-solid fa-cart-plus"></i> <br> Add to cart</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Best Clothing Shop From Edmund.Enjoy!</p>
+  </footer>
+</body>
+</html>

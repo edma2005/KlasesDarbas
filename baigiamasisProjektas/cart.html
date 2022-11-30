@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clothing : Cart</title>
-
-    <link rel="stylesheet" href="/baigiamasisProjektas/css/home.css" />
-    <link rel="stylesheet" href="/baigiamasisProjektas/css/cart.css" />
-    <script defer src="/baigiamasisProjektas/js/nav.js"></script>
-    <script defer src="/baigiamasisProjektas/js/footer.js"></script>
-    <script defer src="/baigiamasisProjektas/js/home.js"></script>
-    <script defer src="/baigiamasisProjektas/js/cart.js"></script>
-  </head>
-  <body>
-    <nav class="navbar"></nav>
-
-    <div class="cart-section">
-      <div class="product-list">
-        <p class="section-heading">your cart</p>
-        <div class="cart">
-          <!-- cart product goes here -->
-          <!-- <img src="img/empty-cart.png" class="empty-img" alt=""> -->
-          <!-- <div class="sm-product">
-                    <img src="img/product image 1.png" class="sm-product-img" alt="">
-                    <div class="sm-text">
-                        <p class="sm-product-name">BRAND</p>
-                        <p class="sm-des">this is a short line about</p>
-                    </div>
-                    <div class="item-counter">
-                        <button class="counter-btn decrement">-</button>
-                        <p class="item-count">1</p>
-                        <button class="counter-btn increment">+</button>
-                    </div>
-                    <p class="sm-price">$20</p>
-                    <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
-                </div> -->
-        </div>
-        <p class="section-heading">your wishlist</p>
-        <div class="wishlist">
-          <!-- wishlist product goes here -->
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <script defer src="cart/scriptCart.js"></script>
+  <link rel="stylesheet" href="cart/stylesCart.css">
+<script src="https://kit.fontawesome.com/b423b1131d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id="mobileNav"><i class="fa-solid fa-bars"></i></div>
+    <ul id="mobileList">
+      <li id="closeBtn"><i class="fa-regular fa-circle-xmark"></i></li>
+      <li id="mainIndex1" class="place">Home Page</li>
+      <li id="suit1" class="place">Suits</li>
+      <li id="shirt1" class="place">Dress Shirts</li>
+      <li id="boot1" class="place">Dress Boots</li>
+      <li id="hat1" class="place">Dress Hats</li>
+      <li id="liked1" class="place"><i class="fa-solid fa-heart forCart"></i></li>
+      <li id="cart1" class="place">
+      <i class="fa-solid fa-cart-arrow-down forCart"></i></li>
+    </ul>
+    <nav>
+      <div class="logo"><img src="./img/Edmund Clothing Shop.png" alt=""></span></div>
+      <div class="cart">
+        <a href="#" id="liked"><i class="fa-solid fa-heart forCart"></i></a>
+        <a href="#" id="cart"><i class="fa-solid fa-cart-arrow-down forCart"></i></a>
       </div>
-      <div class="checkout-section">
-        <div class="checkout-box">
-          <p class="text">your total bill,</p>
-          <h1 class="bill">$00</h1>
-          <a href="/baigiamasisProjektas/checkout.html" class="checkout-btn"
-            >checkout</a
-          >
-        </div>
+      <ul class="navbar">
+        <a href="#" id="mainIndex"><li class="place">Home Page</li></a>
+        <a href="#" id="suit"><li class="place">Suits</li></a>
+        <a href="#" id="shirt"><li class="place">Dress Shirts</li></a>
+        <a href="#" id="boot"><li class="place">Dress Boots</li></a>
+        <a href="#" id="hat"><li class="place">Dress Hats</li></a>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div id="cartInfo">
       </div>
-    </div>
+      <div class="buy">
+        <h2 id="totalPcs"></h2>
+        <h2 id="cartTotal"></h2>
+        <button id="buy">Buy selected items</button>
+        <button id="deleteAll">Cancel your selections</button>
+      </div>
+  </main>
 
-    <footer></footer>
-  </body>
+  <footer>
+    <p>Best Clothing Shop From Edmund.Enjoy!</p>
+  </footer>
+</body>
 </html>
