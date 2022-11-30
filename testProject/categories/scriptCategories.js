@@ -1,28 +1,29 @@
-const filterColor = document.querySelector('#filterColor');
-const filterSearch = document.querySelector('#filterSearch');
-const products = document.querySelector('#products');
 const mainIndex = document.querySelector('#mainIndex');
+const mainIndex1 = document.querySelector('#mainIndex1');
 const suit = document.querySelector('#suit');
+const suit1 = document.querySelector('#suit1');
 const shirt = document.querySelector('#shirt');
+const shirt1 = document.querySelector('#shirt1');
 const boot = document.querySelector('#boot');
+const boot1 = document.querySelector('#boot1');
 const hat = document.querySelector('#hat');
-const title = document.querySelector('title');
+const hat1 = document.querySelector('#hat1');
 const liked = document.querySelector('#liked');
+const liked1 = document.querySelector('#liked1');
 const cart = document.querySelector('#cart');
-const dropdownCart = document.querySelector('#cartsDp');
-const cartDropdownItem = document.querySelector('#cartDropdownItem');
-const cartTotal = document.querySelector('#cartTotal');
+const cart1 = document.querySelector('#cart1');
 const mobileNav = document.querySelector('#mobileNav');
 const mobileList = document.querySelector('#mobileList');
 const closeBtn = document.querySelector('#closeBtn');
 
-const mainIndex1 = document.querySelector('#mainIndex1');
-const suit1 = document.querySelector('#suit1');
-const shirt1 = document.querySelector('#shirt1');
-const boot1 = document.querySelector('#boot1');
-const hat1 = document.querySelector('#hat1');
-const liked1 = document.querySelector('#liked1');
-const cart1 = document.querySelector('#cart1');
+const filterColor = document.querySelector('#filterColor');
+const filterSearch = document.querySelector('#filterSearch');
+const title = document.querySelector('title');
+const products = document.querySelector('#products');
+const dropdownCart = document.querySelector('#cartsDp');
+const cartDropdownItem = document.querySelector('#cartDropdownItem');
+const cartTotal = document.querySelector('#cartTotal');
+
 
 mainIndex1.addEventListener('click', (e) => {
   e.preventDefault()

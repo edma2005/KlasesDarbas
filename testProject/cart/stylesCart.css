@@ -199,6 +199,7 @@ body main .container #cartInfo .productCard .productDetails h3 {
 body main .container #cartInfo .productCard .productDetails span {
   display: block;
   margin: 10px 10px;
+  font-weight: 600;
 }
 body main .container #cartInfo .productCard .productDetails .buttons button {
   margin: 10px;

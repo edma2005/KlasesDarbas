@@ -1,9 +1,22 @@
-const itemCard = document.querySelector('#item');
 const mainIndex = document.querySelector('#mainIndex');
-const suit = document.querySelector('#suit');
+const mainIndex1 = document.querySelector('#mainIndex1');
 const shirt = document.querySelector('#shirt');
+const shirt1 = document.querySelector('#shirt1');
 const boot = document.querySelector('#boot');
+const boot1 = document.querySelector('#boot1');
 const hat = document.querySelector('#hat');
+const hat1 = document.querySelector('#hat1');
+const suit = document.querySelector('#suit');
+const suit1 = document.querySelector('#suit1');
+const liked = document.querySelector('#liked');
+const liked1 = document.querySelector('#liked1');
+const cart = document.querySelector('#cart');
+const cart1 = document.querySelector('#cart1');
+const mobileNav = document.querySelector('#mobileNav');
+const mobileList = document.querySelector('#mobileList');
+const closeBtn = document.querySelector('#closeBtn');
+
+const itemCard = document.querySelector('#item');
 const itemImg = document.querySelector('#itemImg');
 const itemName = document.querySelector('#itemName');
 const itemCategorie = document.querySelector('#itemCategorie');
@@ -15,9 +28,9 @@ const sizeXl = document.querySelector('#xl');
 const itemDescription = document.querySelector('#itemDescription');
 const itemPrice = document.querySelector('#itemPrice');
 const outOfStock = document.querySelector('#OutOfStock');
+
 const title = document.querySelector('title');
 const likeBtn = document.querySelector('#like');
-const liked = document.querySelector('#liked');
 const toCart = document.querySelector('#toCart');
 const sizeDropDown = document.querySelector('#sizeDropDown');
 const option1 = document.querySelector('#option1');
@@ -25,21 +38,9 @@ const option2 = document.querySelector('#option2');
 const option3 = document.querySelector('#option3');
 const option4 = document.querySelector('#option4');
 const sizeForm = document.querySelector('#sizeForm');
-const cart = document.querySelector('#cart');
 const dropdownCart = document.querySelector('#cartsDp');
 const cartDropdownItem = document.querySelector('#cartDropdownItem');
 const cartTotal = document.querySelector('#cartTotal');
-const mobileNav = document.querySelector('#mobileNav');
-const mobileList = document.querySelector('#mobileList');
-const closeBtn = document.querySelector('#closeBtn');
-
-const mainIndex1 = document.querySelector('#mainIndex1');
-const suit1 = document.querySelector('#suit1');
-const shirt1 = document.querySelector('#shirt1');
-const boot1 = document.querySelector('#boot1');
-const hat1 = document.querySelector('#hat1');
-const liked1 = document.querySelector('#liked1');
-const cart1 = document.querySelector('#cart1');
 
 mainIndex1.addEventListener('click', (e) => {
   e.preventDefault()
