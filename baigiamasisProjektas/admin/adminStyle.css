@@ -204,7 +204,6 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 * body #forAdmin #addSlidePics .bottomAdd form #allSliderPics .divSlide {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -259,7 +258,6 @@
 }
 * body #forAdmin #products .drawnProduct div {
   position: relative;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }

@@ -46,7 +46,6 @@ body header #mobileList .place:last-of-type:hover {
 body header #mobileList #closeBtn {
   padding: 15px;
   font-size: 2.5rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
@@ -111,10 +110,8 @@ body header nav .cart #cartsDp {
   background-color: yellow;
   top: 100px;
   right: 500px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 10px;

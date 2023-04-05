@@ -11,7 +11,6 @@ body .margin200 {
   font-family: Arial, Helvetica, sans-serif;
 }
 body .fixed {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
